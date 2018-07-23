@@ -1,0 +1,26 @@
+{
+  "name": "@jahed/aws-lambda-package",
+  "version": "1.0.0",
+  "description": "Packages your code to be executed on AWS Lambda.",
+  "bin": {
+    "aws-lambda-package": "bin/aws-lambda-package.js",
+    "aws-lambda-workspaces": "bin/aws-lambda-workspaces.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jahed Ahmed",
+  "license": "MIT",
+  "files": [
+    "src",
+    "bin"
+  ],
+  "dependencies": {
+    "archiver": "2.1.1",
+    "minimist": "1.2.0",
+    "mkdirp": "0.5.1",
+    "rimraf": "2.6.2",
+    "shelljs": "0.8.2",
+    "tar": "4.4.4"
+  }
+}
