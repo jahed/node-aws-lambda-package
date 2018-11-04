@@ -1,14 +1,24 @@
 # @jahed/aws-lambda-package
 
-Packages your code to be executed on AWS Lambda.
+Packages your NodeJS code to be executed on AWS Lambda.
 
 ## Installation
 
 ```bash
-yarn add @jahed/terraform
+yarn add -D @jahed/aws-lambda-package
+```
+
+### Workspaces
+
+If you're using workspaces, install it at the root package.
+
+```bash
+yarn add -W -D @jahed/aws-lambda-package
 ```
 
 ## Usage
+
+### Building Single Packages
 
 Running `aws-lambda-package` will do the following:
 
@@ -16,9 +26,27 @@ Running `aws-lambda-package` will do the following:
 - Extract the `tgz` to a temporary directory
 - Run `yarn install --production` on the directory
 - Create a ZIP of the directory's contents on your current working directory.
+- You will have to upload your ZIP to AWS Lambda or S3
+  manually (or using your own script)
 
 ```bash
 yarn aws-lambda-package
+```
+
+If you're using workspaces and just want to build one workspace, you can do
+the following:
+
+```bash
+yarn workspaces your-package-name aws-lambda-package
+```
+
+### Building all your workspaces
+
+You can build all of your workspaces at once by running `aws-lambda-workspaces`
+at the root package.
+
+```bash
+yarn aws-lambda-workspaces
 ```
 
 ## Caveats
@@ -31,4 +59,5 @@ yarn aws-lambda-package
 ## Reasoning
 
 A lot of ZIP tools assume Windows line separators (`\`) are okay. AWS Lambda 
-however doesn't support these separators.
+however doesn't support these separators. So I made this project to work
+across systems and remove as many caveats as possible.
