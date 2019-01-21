@@ -7,7 +7,8 @@
     "aws-lambda-workspaces": "bin/aws-lambda-workspaces.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"No test specified\"",
+    "deploy": "yarn test && yarn publish && git push --follow-tags"
   },
   "author": "Jahed Ahmed",
   "license": "MIT",
