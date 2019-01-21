@@ -18,4 +18,5 @@ packageForLambda()
     } else {
       console.error('Failed...', error)
     }
+    process.exit(1)
   })
