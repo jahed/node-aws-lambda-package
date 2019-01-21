@@ -2,6 +2,11 @@
 
 Packages your NodeJS code to be executed on AWS Lambda.
 
+[![Travis](https://img.shields.io/travis/jahed/node-aws-lambda-package.svg)](https://travis-ci.org/jahed/node-aws-lambda-package)
+[![npm](https://img.shields.io/npm/v/@jahed/aws-lambda-package.svg)](https://www.npmjs.com/package/@jahed/aws-lambda-package)
+[![Patreon](https://img.shields.io/badge/patreon-donate-f96854.svg)](https://www.patreon.com/jahed)
+[![Liberapay](https://img.shields.io/badge/liberapay-donate-f6c915.svg)](https://liberapay.com/jahed)
+
 ## Installation
 
 ```bash
@@ -61,3 +66,7 @@ yarn aws-lambda-workspaces
 A lot of ZIP tools assume Windows line separators (`\`) are okay. AWS Lambda 
 however doesn't support these separators. So I made this project to work
 across systems and remove as many caveats as possible.
+
+## License
+
+[MIT](LICENSE)
