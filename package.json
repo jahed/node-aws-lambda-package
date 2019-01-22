@@ -16,6 +16,17 @@
     "src",
     "bin"
   ],
+  "keywords": [
+    "aws",
+    "lambda",
+    "deploy",
+    "zip",
+    "archive",
+    "bundle",
+    "package",
+    "terraform",
+    "infrastructure"
+  ],
   "dependencies": {
     "archiver": "2.1.1",
     "minimist": "1.2.0",
