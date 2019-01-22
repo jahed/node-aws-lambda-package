@@ -1,6 +1,6 @@
 {
   "name": "@jahed/aws-lambda-package",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Packages your code to be executed on AWS Lambda.",
   "bin": {
     "aws-lambda-package": "bin/aws-lambda-package.js",
